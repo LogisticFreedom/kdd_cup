@@ -1,0 +1,4 @@
+tollgate_id,lengthSum,widthSum,lanesSum,laneWidthSum,intersectionNum,linkNum
+1,2371,150,50,63,2,21
+2,384,42,14,18,1,6
+3,2535,162,54,63,3,21

@@ -1,0 +1,39 @@
+featur_train github代码提取的历史数据特征，包括车型，ect，前一天的数据
+featur_test与feature_train对应
+
+volume_feature_train 经过解析后的github提取的历史数据特征，主要是把id和dir提取出来
+volume_feature_test 与volume_feature_train对应
+
+volume_feature_2h_train 自己写的提取历史数据特征，包括距离最近的真实数据的1h、2h，20min，40min和统计特征
+volume_feature_2h_test与volume_feature_2h_train对应
+
+new_wather_train 使用拉格朗日插值形成的天气训练数据
+new_wather_test 与new_wather_train对应
+
+tollgate_feature 收费站特征
+
+train1 完整训练集的数据，只有时间特征
+train2 完整训练集数据，包含了时间特征和收费站id的特征
+train3 train2基础上加入了testing_phase1中的420组数据
+train4 不进行补0的操作，方便计算误差，但是加入了testing_phase1中提高的420组数据
+train5 加入了早晚高峰特征标示，加入了testing_phase1中提高的420组数据
+train6 加入两小时前和前一天两小时前的统计数据作为特征, 不加入testing_phase1中提高的420组数据
+train7 加入天气特征，不加入testing_phase1中提高的420组数据
+train8 综合train6 与 train7 不加入testing_phase1中提高的420组数据
+train9 加入前面两个小时的历史数据统计特征，由于加入了前两小时，所以就不能加入testing_phase1中提高的420组数据
+train10  加入前面两个小时的历史数据统计特征，由于加入了前两小时，所以就不能加入testing_phase1中提高的420组数据,外加入天气插值
+train11 加入前面两个小时的历史数据统计特征,但是没有fill 0
+train12 加入前面两个小时的历史数据统计特征,但是没有fill 0,最后合并的时候没有去nan
+
+test1 与train1对应
+test2 与train2对应
+test3 与train3对应
+test4 与train4对应
+test5 与train5对应
+test6与train6对应
+test7 与train7对应
+test8 与train8对应
+test9 与train9对应
+test10与train10对应
+test11 与train11对应
+test12与train12对应

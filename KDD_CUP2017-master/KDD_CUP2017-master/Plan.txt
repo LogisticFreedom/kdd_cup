@@ -1,0 +1,20 @@
+Task/Date/Responsibility
+
+1.Data Preparation
+1.1 Data Exploration
+A:using the 2 hours before
+
+B:Average hour and volume: distribution for 91 days
+list for [0,1,2]
+0: workday
+1: weekend
+2: national holiday(highway free)
+using def
+
+1.2 Data Cleaning 
+
+2.Naive Thoughts Conclusion
+
+3.Method Discussion
+
+4.Data Processing
